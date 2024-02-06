@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --prim1-color: black;
+    --prim2-color: rgb(252, 207, 8);
+    --prim3-color: rgb(112, 250, 70);
+    --prim4-color: rgb(34, 1, 151);
+    --prim5-color: white;
+    --prim6-color: aquamarine;
+    --prim7-color: blue;
+    --prim8-color: yellowgreen;
+    --prim9-color: cyan;
+    --prim10-color: rgb(150, 19, 19);
+    --prim11-color: rgb(11, 3, 43);
+    --prim12-color: #ff0000;
+}
+.dark
+{
+    --prim1-color: white;
+    --prim4-color: rgb(252, 207, 8);
+    --prim3-color: rgb(24, 54, 15);
+    --prim2-color: rgb(34, 1, 151);
+    --prim5-color: black;
+    --prim6-color: rgb(63, 23, 11);
+    --prim9-color: blue;
+    --prim8-color: rgb(205, 73, 50);
+    --prim7-color: cyan;
+    --prim10-color: rgb(240, 181, 181);
+    --prim11-color: rgb(207, 198, 241);
+    --prim12-color: #0011ff;
+}
+body
+{
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.5;
+    font-size: x-large;
+}
+header
+{
+    padding: 1rem;
+    background-image: linear-gradient(to right, var(--prim1-color), var(--prim2-color));
+}
+nav ul
+{
+    list-style-type: none;
+}
+nav ul li
+{
+    display: inline;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav ul li a
+{
+    color: var(--prim3-color);
+    text-decoration:none;
+}
+nav ul li a:hover
+{
+    color: var(--prim4-color);
+    text-decoration:none;
+}
+#toggle
+{
+    color: var(--prim5-color);
+}
+#toggle:hover
+{
+    color: var(--prim1-color);
+    background-color: var(--prim5-color);
+}
+.leftabout
+{
+    display: flex;
+    margin: 30px;
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    font-size: 70px;
+    color: var(--prim6-color);
+}
+.rightabout
+{
+    margin-right: auto;
+    margin-left: 700px;
+}
+.rightabout img
+{
+    width: 40%;
+    height: auto;
+}
+h2:hover
+{
+    color: #ff0000;
+    background-color:var(--prim5-color);
+}
+h3:hover
+{
+    color: var(--prim7-color);
+    background-color: var(--prim5-color);
+}
+li:hover
+{
+    color: var(--prim8-color);
+}
+section
+{
+    padding: 2rem;
+    background-color: #333;
+    color: var(--prim9-color);
+    background-image: radial-gradient(circle at 99% 1%,var(--prim10-color), var(--prim11-color));
+}
+.gradient-text
+{
+    background: linear-gradient(to right, var(--prim9-color),#ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+footer
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
